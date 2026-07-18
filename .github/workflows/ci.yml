@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  planned:
+    uses: tryscode-eu/.github/.github/workflows/ci-planned.yml@51c087f1d19766e8a1317eb402fe524fe18ca504
